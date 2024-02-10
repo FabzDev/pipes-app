@@ -30,15 +30,17 @@
         <li>fecha</li>
         <li>fecha | date</li>
         <li>fecha | date: 'short'</li>
-        <li>fecha | date: 'medium'</li>
         <li>fecha | date: 'long'</li>
-        <li>fecha | date: 'MMMM'</li>
+        <li>fecha | date: 'MMMMM'</li>
+        <li>fecha | date: 'MMMM dd, yyyy'</li>
         <li>fecha | date: 'YYYY/MM/dd'</li>
       </ol>
       <hr>
       <ol>
-        <li>fecha | date: 'long': GTM-5</li>
-        <li>fecha | date: 'long': GTM-6</li>
+        <li>fecha | date: 'long': 'GTM-5'</li>
+        <li>fecha | date: 'long': 'GTM-6'</li>
+        <li>fecha | date: 'long': '' : 'es-CO'</li>
+        <li>fecha | date: 'long': '' : 'fr-CA'</li>
       </ol>
     </p-card>
   </div>
@@ -49,15 +51,17 @@
         <li>{{date}}</li>
         <li>{{date| date}}</li>
         <li>{{date | date:'short'}}</li>
-        <li>{{date | date:'medium'}}</li>
         <li>{{date | date:'long'}}</li>
-        <li>{{date | date:'MMMM'}}</li>
+        <li>{{date | date:'MMMMM'}}</li>
+        <li>{{date | date:'MMMM dd, yyyy'}}</li>
         <li>{{date | date:'MM/dd/YYYY'}}</li>
       </ol>
       <hr>
       <ol>
         <li>{{date | date:'long':'GMT-5'}}</li>
         <li>{{date | date:'long':'GMT-6'}}</li>
+        <li>{{date | date:'long':'':'es-CO'}}</li>
+        <li>{{date | date:'long':'':'fr-CA'}}</li>
       </ol>
     </p-card>
   </div>
