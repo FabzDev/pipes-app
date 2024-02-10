@@ -11,7 +11,7 @@
       <p>
         Saludos {{name}}, es un placer {{gender | i18nSelect:genderMap}} a nuestro evento
       </p>
-      <p-button (onClick)="changeClient()">
+      <p-button (click)="changeClient()">
         Cambiar persona
       </p-button>
     </p-fieldset>
@@ -19,7 +19,12 @@
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="i18nPlural Pipe" [toggleable]=true>
-
+      <p>
+        Actualmente {{clientes.length | i18nPlural: clientesMap}} esperando.
+      </p>
+      <p-button (click)="delClient()">
+        Borrar cliente
+      </p-button>
     </p-fieldset>
   </div>
 
