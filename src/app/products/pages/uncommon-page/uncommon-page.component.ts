@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Observable, interval, tap } from 'rxjs';
 
 @Component({
   selector: 'pages-uncommon-page',
@@ -44,4 +45,17 @@ export class UncommonPageComponent {
     age: 1,
     address: "Milano, Italia"
   }
+
+  // Async Pipe
+  public obser: Observable<number> = interval(1000).pipe(
+    tap(seg => console.log(seg)
+    )
+  );
+
+  public prom: Promise<string> = new Promise<string>((resolve, reject) => {
+    setTimeout(() => {
+      resolve('Tenemos data')
+      console.log('Tambien en consola tenemos data');
+    }, 10000);
+  })
 }

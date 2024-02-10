@@ -66,7 +66,15 @@
 
   <div class="col-12 md:col-6">
     <p-fieldset legend="Async Pipe" [toggleable] = true>
-
+      <div *ngIf="(obser)">
+        Llevas {{obser | async}} segundos resolviendo este ejercicio
+      </div>
+      <!-- <div *ngIf="!(obser | async)">
+        No hay nada que demostrar
+     </div> -->
+     <div>
+      {{prom | async}}
+     </div>
     </p-fieldset>
   </div>
 </div>
