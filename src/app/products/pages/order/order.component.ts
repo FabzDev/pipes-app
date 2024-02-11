@@ -8,6 +8,7 @@ import { Color, Hero } from '../../interfaces/hero.interface';
 })
 export class OrderComponent {
   public isUpperCase: boolean = false;
+  public toggleAtr: keyof Hero | '' = '';
   public heroes: Hero[] = [
     {
       name: 'Superman',
@@ -33,5 +34,9 @@ export class OrderComponent {
 
   toogleCase(){
     this.isUpperCase = !this.isUpperCase;
+  }
+
+  modifyToggleAtr(atr: keyof Hero){
+    this.toggleAtr = atr;
   }
 }

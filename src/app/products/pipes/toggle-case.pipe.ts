@@ -8,16 +8,4 @@ export class ToggleCase implements PipeTransform {
     console.log(args);
     return upper ? value.toUpperCase() : value.toLowerCase();
   }
-
-  // transform(value: string) {
-  //   let strBuilder: string = '';
-  //   for (let letter of value) {
-  //     if (letter.match('[A-Z]')) {
-  //       strBuilder += letter.toLowerCase();
-  //     } else {
-  //       strBuilder += letter.toUpperCase();
-  //     }
-  //   }
-  //   return strBuilder;
-  // }
 }
